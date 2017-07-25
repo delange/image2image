@@ -4,7 +4,7 @@ Search images with  image featurization and pre-trained deep learning models.
 
 The provided R script performs an image to image search.
 
-The solution makes use of Microsoft R Server and MicrosoftML library. However, for development purpose the free Microsoft R Client is sufficient enough.
+The solution makes use of Microsoft R Server (version 9.1.0) and MicrosoftML library. However, for development purpose the free Microsoft R Client is sufficient enough.
 
 
 # Install instructions:
