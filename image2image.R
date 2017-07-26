@@ -18,7 +18,7 @@ if (dir.exists(workingDir)){
 }
 
 
-# Set the location of the images
+## Set the location of the images
 imageLocation = "images/"
 
 images <- list.files("collection", recursive = TRUE, pattern = "\\.jpg",  full.names=TRUE)
@@ -52,7 +52,7 @@ imageFeatureVectorDF <- rxFeaturize(
 
 # First featurize the image that we want to find matches for
 # We start with creating a dataframe with the location of the image
-imageToMatch <- data.frame(Image = c(file.path(imageLocation, "sample/chair31.jpg")), 
+imageToMatch <- data.frame(Image = c(file.path(imageLocation, "sample/chair56.jpg")), 
                            stringsAsFactors = FALSE)
 
 # Now let's featurize this image we want to match
