@@ -4,7 +4,7 @@
 library(MicrosoftML)
 
 ## Change NA to the actual location of the script. Use the absolute path.
-workingDir <- "C:/Users/redelang/Documents/Code_local/Projects/image2image"
+ workingDir <- "C:/Users/Public/Code_local/Projects/image2image"
 
 if (is.na(workingDir)) {
     stop("The working directory needs to be set to the location of the script.")
@@ -22,7 +22,6 @@ if (dir.exists(workingDir)) {
 imageLocation = "images/"
 
 images <- list.files(paste0(imageLocation, "collection"), recursive = TRUE, pattern = "\\.jpg", full.names = TRUE)
-
 
 # Setup a dataframe with the path to the image
 # MUST set the stringAsFactors to FALSE
@@ -47,7 +46,6 @@ imageFeatureVectorDF <- rxFeaturize(
 
 # Now, given an image, the task is to find the best matching image 
 # from the list of images we'd featurized above
-
 # First featurize the image that we want to find matches for
 # We start with creating a dataframe with the location of the image
 imageToMatch <- data.frame(Image = c(file.path(imageLocation, "sample/chair56.jpg")),
